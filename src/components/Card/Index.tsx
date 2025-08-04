@@ -4,7 +4,7 @@ import style from "./styles.module.scss";
 import Image from "next/image";
 
 const Card = ({
-  link,
+  onDetails,
   image,
   title,
   category,
@@ -17,7 +17,7 @@ const Card = ({
 
   return (
     <aside className={style.card}>
-      <a className={style.card__link} href={link}>
+      <div className={style.card__link} onClick={onDetails}>
         <Image
           className={style.card__link__image}
           src={image}
@@ -35,7 +35,7 @@ const Card = ({
             {currencyMask(price)}
           </p>
         </div>
-      </a>
+      </div>
     </aside>
   );
 };

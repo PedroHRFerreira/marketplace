@@ -32,7 +32,6 @@ const List = () => {
 
   const cards: ITypesCard[] = data.map((card) => ({
     id: card.id,
-    link: "#",
     image: card.image,
     title: card.title,
     category: card.category,
@@ -40,12 +39,16 @@ const List = () => {
     price: String(card.price),
   }));
 
+  const details = () => {
+    console.log("details");
+  };
+
   return (
     <section className={style.list}>
       {cards.map((card) => (
         <Card
           key={card.id}
-          link={card.link}
+          onDetails={details}
           image={card.image}
           title={card.title}
           category={card.category}

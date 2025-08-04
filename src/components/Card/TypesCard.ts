@@ -1,6 +1,6 @@
 export interface ITypesCard {
   id?: number;
-  link: string;
+  onDetails?: () => void;
   image: string;
   title: string;
   category: string;
