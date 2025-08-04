@@ -1,11 +1,11 @@
 import RootLayout from "@/layouts/RootLayout";
-import MoleculesCard from "@/components/Card/Index";
+import Card from "@/components/Card/Index";
 
 export default function Home() {
   return (
     <RootLayout>
       <article>
-        <MoleculesCard />
+        <Card />
       </article>
     </RootLayout>
   );

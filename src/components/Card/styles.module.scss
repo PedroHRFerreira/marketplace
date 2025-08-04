@@ -28,6 +28,11 @@
     &__content {
       border-top: 1px dotted #ccc;
 
+      &__price {
+        font-weight: bold;
+        color: aqua;
+      }
+
       &__title {
         display: flex;
         flex-direction: column;
