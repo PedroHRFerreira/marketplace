@@ -11,7 +11,7 @@ const Card = ({
   description,
   price,
 }: ITypesCard) => {
-  const truncateText = (text: string, maxLength: number = 15): string => {
+  const truncateText = (text: string, maxLength): string => {
     return text.length > maxLength ? `${text.slice(0, maxLength)}...` : text;
   };
 
@@ -27,10 +27,10 @@ const Card = ({
         />
         <div className={style.card__link__content}>
           <span className={style.card__link__content__title}>
-            <h4>{truncateText(title)}</h4>
-            <h4>Category: {truncateText(category)}</h4>
+            <h4>{truncateText(title, 15)}</h4>
+            <h4>Category: {truncateText(category, 5)}</h4>
           </span>
-          <p>{truncateText(description)}</p>
+          <p>{truncateText(description, 15)}</p>
           <p className={style.card__link__content__price}>
             {currencyMask(price)}
           </p>
