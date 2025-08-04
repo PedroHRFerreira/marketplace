@@ -1,0 +1,49 @@
+.header {
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 255, 255, 0.3) 0%,
+    rgba(0, 255, 255, 0) 100%
+  );
+  padding: 1rem 2rem;
+  font-family: "Poppins", sans-serif;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  &__title {
+    color: #fff;
+    font-size: 1.8rem;
+  }
+
+  &__search {
+    flex: 1;
+    max-width: 400px;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border-radius: 1.5rem;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    backdrop-filter: blur(4px);
+    transition: background-color 0.3s ease;
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    &:focus {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+  }
+}
