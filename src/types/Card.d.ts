@@ -1,9 +1,9 @@
-export interface ITypesCard {
-  id?: number;
+export interface ICard {
+  id: number;
   link: string;
   image: string;
   title: string;
   category: string;
   description: string;
-  price: string;
+  price: number;
 }
