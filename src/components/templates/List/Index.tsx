@@ -41,7 +41,7 @@ const List = () => {
   }));
 
   return (
-    <section className={`${style.list} ${loading || error ? "loading" : ""}`}>
+    <section className={style.list}>
       {cards.map((card) => (
         <Card
           key={card.id}
