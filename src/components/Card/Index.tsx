@@ -11,7 +11,7 @@ const Card = ({
   description,
   price,
 }: ITypesCard) => {
-  const truncateText = (text: string, maxLength): string => {
+  const truncateText = (text: string, maxLength: number): string => {
     return text.length > maxLength ? `${text.slice(0, maxLength)}...` : text;
   };
 
