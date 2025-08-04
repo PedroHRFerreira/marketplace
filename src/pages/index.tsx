@@ -1,10 +1,12 @@
 import RootLayout from "@/layouts/RootLayout";
-import Card from "@/components/Card/Index";
+import List from "@/components/templates/List/Index";
 
 export default function Home() {
   return (
     <RootLayout>
-      <article>{/* <Card /> */}</article>
+      <article>
+        <List />
+      </article>
     </RootLayout>
   );
 }
