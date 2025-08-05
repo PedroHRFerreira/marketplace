@@ -1,5 +1,5 @@
 export interface ITypesCard {
-  id?: number;
+  id: number;
   onDetails?: () => void;
   image: string;
   title: string;
